@@ -28,14 +28,17 @@ namespace BookStore.Migrations
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClassCat")
+                    b.Property<string>("Cat")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Class")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("Price")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Publisher")
                         .HasColumnType("nvarchar(max)");

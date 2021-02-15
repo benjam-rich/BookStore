@@ -28,7 +28,8 @@ namespace BookStore.Models
                         Author = "Victor Hugo",
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
-                        ClassCat = "Fiction, Classic",
+                        Class = "Fiction",
+                        Cat = "Classic",
                         Price = "$9.95"
                     },
                     new Book
@@ -37,7 +38,8 @@ namespace BookStore.Models
                         Author = "Doris Kearns Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978-0743270755",
-                        ClassCat = "Non-fiction, Biography",
+                        Class = "Non-fiction",
+                        Cat = "Biography",
                         Price = "$14.58"
                     },
                     new Book
@@ -46,7 +48,8 @@ namespace BookStore.Models
                         Author = "Alice Shroeder",
                         Publisher = "Bantam",
                         ISBN = "978-0553384611",
-                        ClassCat = "Non-fiction, Biography",
+                        Class = "Non-fiction",
+                        Cat = "Biography",
                         Price = "$21.54"
                     },
 
@@ -57,7 +60,8 @@ namespace BookStore.Models
                         Author = "Ronald C. White",
                         Publisher = "Random House",
                         ISBN = "978-0812981254",
-                        ClassCat = "Non-fiction, Biography",
+                        Class = "Non-fiction",
+                        Cat = "Biography",
                         Price = "$11.61"
                     },
 
@@ -68,7 +72,8 @@ namespace BookStore.Models
                         Author = "Lauren Hildenbrand",
                         Publisher = "Random House",
                         ISBN = "978-0812974492",
-                        ClassCat = "Non-fiction, Historical",
+                        Class = "Non-fiction",
+                        Cat = "Historical",
                         Price = "$13.33"
                     },
 
@@ -78,7 +83,8 @@ namespace BookStore.Models
                         Author = "Michael Crichton",
                         Publisher = "Vintage",
                         ISBN = "978-0804171281",
-                        ClassCat = "Fiction, Historical Fiction",
+                        Class = "Fiction",
+                        Cat = "Historical Fiction",
                         Price = "$15.95"
                     },
 
@@ -88,7 +94,8 @@ namespace BookStore.Models
                         Author = "Cal Newport",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455523023",
-                        ClassCat = "Non-fiction, Self-Help",
+                        Class = "Non-fiction",
+                        Cat = "Self-Help",
                         Price = "$14.99"
                     },
 
@@ -98,7 +105,8 @@ namespace BookStore.Models
                         Author = "Michael Abrashoff",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978-1455523023",
-                        ClassCat = "Non-fiction, Self-Help",
+                        Class = "Non-fiction",
+                        Cat = "Self-Help",
                         Price = "$21.66"
                     },
 
@@ -108,7 +116,8 @@ namespace BookStore.Models
                         Author = "Richard Branson",
                         Publisher = "Portfolio",
                         ISBN = "978-15919847984",
-                        ClassCat = "Non-fiction, Business",
+                        Class = "Non-fiction",
+                        Cat = "Business",
                         Price = "$29.16"
                     },
                     new Book
@@ -117,7 +126,8 @@ namespace BookStore.Models
                         Author = "John Grisham",
                         Publisher = "Bantam",
                         ISBN = "978-0553393613",
-                        ClassCat = "Fiction, Thrillers",
+                        Class = "Fiction",
+                        Cat = "Thrillers",
                         Price = "$15.03"
                     }
                     );

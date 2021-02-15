@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Migrations
 {
     [DbContext(typeof(BookDBContext))]
-    [Migration("20210213180350_Initial")]
-    partial class Initial
+    [Migration("20210215214703_First")]
+    partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,14 +30,17 @@ namespace BookStore.Migrations
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClassCat")
+                    b.Property<string>("Cat")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Class")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("Price")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Publisher")
                         .HasColumnType("nvarchar(max)");
