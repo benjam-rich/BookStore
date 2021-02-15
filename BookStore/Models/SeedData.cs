@@ -10,6 +10,7 @@ namespace BookStore.Models
 {
     public class SeedData
     {
+        //This class automatically adds data to the database
         public static void EnsurePopulated (IApplicationBuilder application)
         {
             BookDBContext context = application.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<BookDBContext>();
@@ -19,6 +20,7 @@ namespace BookStore.Models
                 context.Database.Migrate();
             }
 
+            //These are all the current books in the database. The BookID field is automatically generated
             if(!context.Books.Any())
             {
                 context.Books.AddRange(

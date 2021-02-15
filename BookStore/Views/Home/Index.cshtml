@@ -5,13 +5,14 @@
 @model IQueryable<Book>
 
 <div class="text-center">
+    <!--This is my somewhat creative title. This page is connected to the Layout.cshtml which uses the default bootstrap-->
     <h1 class="display-4">Welcome to Budget Amazon</h1>
     <p>Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
 </div>
 
 <h4 class="bg-primary text-white text-center">Books Currently in Our Inventory</h4>
 <div>
-    <!--This is the table with the proper headers containing all of the restaurants currently in memory-->
+    <!--This is the table with the proper headers containing all of the Books currently in the database-->
     <table>
         <thead>
         <th>Title</th>
@@ -23,6 +24,7 @@
         <th>Price</th>
         </thead>
 
+       <!--this iterates through the various book table attributes to display them in a table-->
         <tbody>
             @foreach (var x in Model)
             {
