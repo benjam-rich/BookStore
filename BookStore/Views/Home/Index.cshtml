@@ -16,7 +16,9 @@
     <table>
         <thead>
         <th>Title</th>
-        <th>Author</th>
+        <th>Author First</th>
+        <th>Author Middle</th>
+        <th>Author Last</th>
         <th>Publisher</th>
         <th>ISBN</th>
         <th>Classification</th>
@@ -24,13 +26,15 @@
         <th>Price</th>
         </thead>
 
-       <!--this iterates through the various book table attributes to display them in a table-->
+        <!--this iterates through the various book table attributes to display them in a table-->
         <tbody>
             @foreach (var x in Model)
             {
             <tr>
                 <td>@x.Title</td>
-                <td>@x.Author</td>
+                <td>@x.AuthorFirst</td>
+                <td>@x.AuthorMiddle</td>
+                <td>@x.AuthorLast</td>
                 <td>@x.Publisher</td>
                 <td>@x.ISBN</td>
                 <td>@x.Class</td>
