@@ -7,12 +7,13 @@
     <title>@ViewData["Title"] - BookStore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link href="~/css/Styles.css" rel="stylesheet" />
+    <link href="~/css/Style.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 navbar-default">
             <div class="container">
+                <!-- style="background-color: #ff9900"-->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookStore</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +32,15 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Budget Amazon</h1>
+        <img width=50 height=25 src="~/amzn.jpg" />
+        <p class="font-weight-bold">Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
     </div>
+
+        <main role="main" class="pb-3">
+              @RenderBody()
+        </main>
 
     <footer class="border-top footer text-muted">
         <div class="container">

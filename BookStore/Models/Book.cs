@@ -31,6 +31,7 @@ namespace BookStore.Models
         public string Cat { get; set; }
         [Required]
         public string Price { get; set; }
+        public int PageNum { get; set; }
     }
 
 

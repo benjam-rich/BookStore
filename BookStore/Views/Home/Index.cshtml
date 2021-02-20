@@ -2,46 +2,56 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model IQueryable<Book>
-
-<div class="text-center">
-    <!--This is my somewhat creative title. This page is connected to the Layout.cshtml which uses the default bootstrap-->
-    <h1 class="display-4">Welcome to Budget Amazon</h1>
-    <p>Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
-</div>
-
-<h4 class="bg-primary text-white text-center">Books Currently in Our Inventory</h4>
+@model BookListViewModel
+<!-- This page is connected to the Layout.cshtml which uses the default as well as custom bootstrap-->
+<!--My additional bootstrap that I used for the project you can find below:
+    1. I used the bootsrap element of table-hover to have a slight highlight effect when the mouse hovers over a book in the table
+    2. I used class="font-weight-bold" in the _layout page to make p-tag text bolded
+    3. I created a floating stamp with a shadow at the bottom that tells the user thanks for visiting the site. 
+       The bootstrap is class="shadow-lg p-3 mb-5 rounded center text-center"-->
+<br />
 <div>
-    <!--This is the table with the proper headers containing all of the Books currently in the database-->
-    <table>
-        <thead>
-        <th>Title</th>
-        <th>Author First</th>
-        <th>Author Middle</th>
-        <th>Author Last</th>
-        <th>Publisher</th>
-        <th>ISBN</th>
-        <th>Classification</th>
-        <th>Category</th>
-        <th>Price</th>
-        </thead>
+    <h4 class="center amazon text-white text-center" style="width:80%">Books Currently in Our Inventory</h4>
+    <div>
+        <!--This is the table with the proper headers containing all of the Books currently in the database-->
+        <table class="center table-hover" style="width:80%">
+            <thead class="thead-dark">
+            <th>Title</th>
+            <th>Author First</th>
+            <th>Author Middle</th>
+            <th>Author Last</th>
+            <th>Publisher</th>
+            <th>ISBN</th>
+            <th>Classification</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Pages</th>
+            </thead>
 
-        <!--this iterates through the various book table attributes to display them in a table-->
-        <tbody>
-            @foreach (var x in Model)
-            {
-            <tr>
-                <td>@x.Title</td>
-                <td>@x.AuthorFirst</td>
-                <td>@x.AuthorMiddle</td>
-                <td>@x.AuthorLast</td>
-                <td>@x.Publisher</td>
-                <td>@x.ISBN</td>
-                <td>@x.Class</td>
-                <td>@x.Cat</td>
-                <td>@x.Price</td>
-            </tr>
-            }
-        </tbody>
-    </table>
+            <!--this iterates through the various book table attributes to display them in a table-->
+            <tbody>
+                @foreach (var x in Model.Books)
+                {
+                    <tr>
+                        <td>@x.Title</td>
+                        <td>@x.AuthorFirst</td>
+                        <td>@x.AuthorMiddle</td>
+                        <td>@x.AuthorLast</td>
+                        <td>@x.Publisher</td>
+                        <td>@x.ISBN</td>
+                        <td>@x.Class</td>
+                        <td>@x.Cat</td>
+                        <td>@x.Price</td>
+                        <td>@x.PageNum</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
+<br />
+<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
+     page-class-normal="btn-outline-light" page-class-selected="btn-primary class=" btn-group pull-right m-1></div>
+
+<br />
+<div class="shadow-lg p-3 mb-5 rounded center amazon text-center" style="width:20%">Thanks for visiting Budget Amazon!</div>
