@@ -13,7 +13,6 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 navbar-default">
             <div class="container">
-                <!-- style="background-color: #ff9900"-->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookStore</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +32,11 @@
         </nav>
     </header>
     <div class="text-center">
-        <h1 class="display-4">Welcome to Budget Amazon</h1>
-        <img width=50 height=25 src="~/amzn.jpg" />
+        <h1 class="display-4">Welcome to Budget Amazon</h1><img width=50 height=25 src="~/amzn.jpg" />
+        
         <p class="font-weight-bold">Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
     </div>
-
+    <!--This is where the body comes in from Index.html-->
         <main role="main" class="pb-3">
               @RenderBody()
         </main>
@@ -50,6 +49,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--This allows the Page Numbers to show up dynamically-->
     @RenderSection("Scripts", required: false)
 </body>
 </html>

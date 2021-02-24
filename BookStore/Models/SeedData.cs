@@ -21,6 +21,7 @@ namespace BookStore.Models
             }
 
             //These are all the current books in the database. The BookID field is automatically generated
+            //I'm really good at redoing migrations now
             if(!context.Books.Any())
             {
                 context.Books.AddRange(

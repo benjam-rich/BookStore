@@ -31,6 +31,7 @@ namespace BookStore.Infastructure
         public string PageClassSelected { get; set; }
 
         //Overriding
+        //The Helper below is what allows me to show the P<page #> in the URL and creates the string necessary
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
