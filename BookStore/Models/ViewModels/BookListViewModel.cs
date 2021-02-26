@@ -9,5 +9,6 @@ namespace BookStore.Models.ViewModels
     {//This allows the Books in the bookStore model to be iterated through using the IEnumerable
         public IEnumerable<Book> Books { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentCategory { get; set; }
     }
 }
