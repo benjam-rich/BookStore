@@ -14,10 +14,12 @@ namespace BookStore.Components
         {
             repository = r;
         }
+
+        //This allows the database to be filtered by category
         public IViewComponentResult Invoke()
         {
             ViewBag.SelectedCat = RouteData?.Values["category"];
-
+            //Basically a SQL script to select only the distinct items by category
             return View(repository.Books
                 .Select(x => x.Cat)
                 .Distinct()

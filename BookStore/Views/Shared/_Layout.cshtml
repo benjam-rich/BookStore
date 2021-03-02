@@ -35,11 +35,14 @@
         <h1 class="display-4">Welcome to Budget Amazon</h1><img width=50 height=25 src="~/amzn.jpg" />
         <p class="font-weight-bold">Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
     </div>
+    <!--This divides the site into columns to allow for a beautiful and proper displaying of the title, the table, and the category buttons-->
         <div class="container">
             <div class="row">
+                <!--This is where the navigation menu for category comes in on the left two columns-->
                 <div class="col-2">
                     <vc:navigation-menu />
                 </div>
+                <!--The right 10 columns will dipslay the database and everything else contained on the Index.cshtml page-->
                 <div class="col-10">
                     <main role="main" class="pb-3">
                         @RenderBody()
