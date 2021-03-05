@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using BookStore.Models.ViewModels;
 
 namespace BookStore.Controllers
-{
+{ //Controller is what faciliates action
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
