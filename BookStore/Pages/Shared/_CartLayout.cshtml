@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/Style.css" rel="stylesheet" />
-    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -37,37 +36,37 @@
         <p class="font-weight-bold">Your one-stop shop for buying books online for a price probably higher than what you can find on Amazon</p>
     </div>
     <!--This divides the site into columns to allow for a beautiful and proper displaying of the title, the table, and the category buttons-->
-        <div class="container">
-            <div class="row">
-                <!--This is where the navigation menu for category comes in on the left two columns-->
-                <div class="col-2">
-                    <vc:navigation-menu />
-                </div>
-                <!--The right 10 columns will dipslay the database and everything else contained on the Index.cshtml page-->
-                <div class="col-10">
-                    <main role="main" class="pb-3">
-                        @RenderBody()
-                    </main>
-                </div>
+    <div class="container">
+        <div class="row">
+            <!--This is where the navigation menu for category comes in on the left two columns-->
+            <div class="col-2">
+                <vc:navigation-menu />
+            </div>
+            <!--The right 10 columns will dipslay the database and everything else contained on the Index.cshtml page-->
+            <div class="col-10">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
             </div>
         </div>
-
-        
-
-
-    
-            <!--This is where the body comes in from Index.html-->
+    </div>
 
 
-            <footer class="border-top footer text-muted">
-                <div class="container">
-                    &copy; 2021 - BookStore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
-            </footer>
-            <script src="~/lib/jquery/dist/jquery.min.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>
-            <!--This allows the Page Numbers to show up dynamically-->
-            @RenderSection("Scripts", required: false)
+
+
+
+    <!--This is where the body comes in from Index.html-->
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - BookStore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--This allows the Page Numbers to show up dynamically-->
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
