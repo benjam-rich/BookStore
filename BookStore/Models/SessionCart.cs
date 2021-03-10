@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Text.Json.Serialization;
+using BookStore.Infastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using BookStore.Infrastructure;
+using Microsoft.AspNetCore.Http.Extensions;
 namespace BookStore.Models
 {
     public class SessionCart : Cart
