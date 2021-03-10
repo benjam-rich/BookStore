@@ -47,9 +47,8 @@ namespace BookStore.Migrations
                     b.Property<int>("PageNum")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("Publisher")
                         .IsRequired()

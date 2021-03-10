@@ -35,7 +35,7 @@ namespace BookStore.Models
                         ISBN = "978-0451419439",
                         Class = "Fiction",
                         Cat = "Classic",
-                        Price = "$9.95",
+                        Price = 9.95,
                         PageNum = 1488
                     },
                     new Book
@@ -48,7 +48,7 @@ namespace BookStore.Models
                         ISBN = "978-0743270755",
                         Class = "Non-fiction",
                         Cat = "Biography",
-                        Price = "$14.58",
+                        Price = 14.58,
                         PageNum = 944
                     },
                     new Book
@@ -61,7 +61,7 @@ namespace BookStore.Models
                         ISBN = "978-0553384611",
                         Class = "Non-fiction",
                         Cat = "Biography",
-                        Price = "$21.54",
+                        Price = 21.54,
                         PageNum = 832
                     },
 
@@ -76,7 +76,7 @@ namespace BookStore.Models
                         ISBN = "978-0812981254",
                         Class = "Non-fiction",
                         Cat = "Biography",
-                        Price = "$11.61",
+                        Price = 11.61,
                         PageNum = 864
                     },
 
@@ -91,7 +91,7 @@ namespace BookStore.Models
                         ISBN = "978-0812974492",
                         Class = "Non-fiction",
                         Cat = "Historical",
-                        Price = "$13.33",
+                        Price = 13.33,
                         PageNum = 528
                     },
 
@@ -105,7 +105,7 @@ namespace BookStore.Models
                         ISBN = "978-0804171281",
                         Class = "Fiction",
                         Cat = "Historical Fiction",
-                        Price = "$15.95",
+                        Price = 15.95,
                         PageNum = 288
                     },
 
@@ -119,7 +119,7 @@ namespace BookStore.Models
                         ISBN = "978-1455523023",
                         Class = "Non-fiction",
                         Cat = "Self-Help",
-                        Price = "$14.99",
+                        Price = 14.99,
                         PageNum = 304
                     },
 
@@ -133,7 +133,7 @@ namespace BookStore.Models
                         ISBN = "978-1455523023",
                         Class = "Non-fiction",
                         Cat = "Self-Help",
-                        Price = "$21.66",
+                        Price = 21.66,
                         PageNum = 240
                     },
 
@@ -147,7 +147,7 @@ namespace BookStore.Models
                         ISBN = "978-15919847984",
                         Class = "Non-fiction",
                         Cat = "Business",
-                        Price = "$29.16",
+                        Price = 29.16,
                         PageNum = 400
                     },
                     new Book
@@ -160,7 +160,7 @@ namespace BookStore.Models
                         ISBN = "978-0553393613",
                         Class = "Fiction",
                         Cat = "Thrillers",
-                        Price = "$15.03",
+                        Price = 15.03,
                         PageNum = 642
                     },
                     new Book
@@ -173,7 +173,7 @@ namespace BookStore.Models
                         ISBN = "978-0141447231",
                         Class = "Fiction",
                         Cat = "Historical-fiction",
-                        Price = "$25.18",
+                        Price = 25.18,
                         PageNum = 684
                     },
                     new Book
@@ -186,7 +186,7 @@ namespace BookStore.Models
                         ISBN = "978-8746209454",
                         Class = "Non-Fiction",
                         Cat = "Self-Help",
-                        Price = "$9.99",
+                        Price = 9.99,
                         PageNum = 256
                     },
                     new Book
@@ -199,7 +199,7 @@ namespace BookStore.Models
                         ISBN = "978-1328575487",
                         Class = "Fiction",
                         Cat = "Thrillers",
-                        Price = "$7.83",
+                        Price = 7.83,
                         PageNum = 192
                     }
                     );

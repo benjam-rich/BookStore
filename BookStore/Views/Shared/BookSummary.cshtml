@@ -13,6 +13,19 @@
     <td>@Model.ISBN</td>
     <td>@Model.Class</td>
     <td>@Model.Cat</td>
-    <td>@Model.Price</td>
+    <td>$@Model.Price</td>
     <td>@Model.PageNum</td>
+    <td>
+        <form id="@Model.BookID" asp-page="/Buy" method="post">
+            <input type="hidden" asp-for="BookID" />
+            <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+            <span ckass="card-text p-1">
+                @*@Model.Title*@
+                <button type="submit" class="btn-success btn-sm pull-right" style="float:right">
+                    Buy
+                </button>
+            </span>
+        </form>
+    </td>
 </tr>
+
