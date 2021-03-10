@@ -13,9 +13,10 @@ namespace BookStore.Pages
     {
         private IBookRepository repository;
         //Constructor
-        public BuyModel (IBookRepository repo)
+        public BuyModel (IBookRepository repo, Cart cartService)
         {
             repository = repo;
+            Cart = cartService;
         }
         //Properties
         public Cart Cart { get; set; }
@@ -42,7 +43,7 @@ namespace BookStore.Pages
         {
             Cart.RemoveLine(Cart.Lines.First(cl =>
             cl.Book.BookID == bookId).Book);
-            return RedirectToPage(new { returnUrl = returnUrl });
+            return RedirectToPage(new { returnUrl = returnUrl});
         }
     }
 }
