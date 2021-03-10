@@ -39,11 +39,11 @@ namespace BookStore.Pages
             return RedirectToPage(new { returnUrl = returnUrl });
         }
 
-        public IActionResult OnPostRemove (long bookId, string returnUrl)
+        public IActionResult OnPostRemove(long bookID, string returnUrl)
         {
             Cart.RemoveLine(Cart.Lines.First(cl =>
-            cl.Book.BookID == bookId).Book);
-            return RedirectToPage(new { returnUrl = returnUrl});
+                cl.Book.BookID == bookID).Book);
+            return RedirectToPage(new { returnUrl = returnUrl });
         }
     }
 }

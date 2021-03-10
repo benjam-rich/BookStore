@@ -9,23 +9,23 @@ namespace BookStore.Models
     {
         public List<CartLine> Lines { get; set; } = new List<CartLine>();
 
-        public virtual void AddItem (Book bk, int qty)
+        public virtual void AddItem (Book book, int quantity)
         {
             CartLine line = Lines
-                .Where(p => p.Book.BookID == bk.BookID)
+                .Where(p => p.Book.BookID == book.BookID)
                 .FirstOrDefault();
 
             if (line == null)
             {
                 Lines.Add(new CartLine
                 {
-                    Book = bk,
-                    Quantity = qty
+                    Book = book,
+                    Quantity = quantity
                 });
             }
             else
             {
-                line.Quantity += qty;
+                line.Quantity += quantity;
             }
         }
 
