@@ -25,19 +25,18 @@ namespace BookStore.Pages
         public void OnGet(string returnUrl)
         {
             ReturnUrl = returnUrl ?? "/";
-            Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+   
+
         }
 
-        public IActionResult OnPost(long bookID, string returnUrl)
+        public IActionResult OnPost(long bookId, string returnUrl)
         {
-            Book book = repository.Books.FirstOrDefault(p => p.BookID == bookID);
-
-            Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+            Book book = repository.Books
+            .FirstOrDefault(p => p.BookID == bookId);
             Cart.AddItem(book, 1);
-            HttpContext.Session.SetJson("cart", Cart);
-
             return RedirectToPage(new { returnUrl = returnUrl });
         }
+
 
         public IActionResult OnPostRemove(long bookID, string returnUrl)
         {
