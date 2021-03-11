@@ -2,6 +2,7 @@
 @page
 @model BookStore.Pages.BuyModel
 <h2>Your cart</h2>
+<!--this page renders the cart display-->
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -12,6 +13,7 @@
             <th></th>
         </tr>
     </thead>
+    <!--iterates through the lines for the cart that we built int he buy.cshtml.cs-->
     <tbody>
         @foreach (var line in Model.Cart.Lines)
         {
